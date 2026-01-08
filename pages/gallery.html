@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie – Café Zakariae</title>
+    <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+
+    <header class="nav-header">
+        <nav class="nav">
+            <a href="../index.html" class="nav-logo">
+                <img src="../images/logo.png" alt="Logo Café Zakariae" width="50">
+                <h1>Café Zakariae</h1>
+            </a>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#hours">Horaires</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="visit-counter">
+                    <span>👀</span>
+                    <span id="visits">0</span>
+                </li>
+                <li class="location-badge">
+                    <span>📍</span>
+                    <span id="user-location">...</span>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero hero-menu">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Galerie</h1>
+            <p class="hero-subtitle">Découvrez l'ambiance et nos créations caféinées</p>
+        </div>
+    </section>
+
+    <section class="gallery-intro">
+        <div class="container">
+            <h2>Bienvenue dans notre Galerie</h2>
+            <p>
+                Plongez dans l’univers du Café Zakariae : découvrez notre ambiance chaleureuse, nos créations
+                artisanales et les moments partagés par nos clients.
+                Chaque photo capture l’essence de notre café, de l’intérieur cosy aux boissons raffinées.
+            </p>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <h2>📸 Notre Galerie</h2>
+        <p class="gallery-subtitle">Ambiance, produits et moments uniques</p>
+
+        <div class="gallery-filters">
+            <button data-filter="all" class="active">Tout</button>
+            <button data-filter="interior">Intérieur</button>
+            <button data-filter="products">Produits</button>
+            <button data-filter="events">Événements</button>
+        </div>
+
+        <div class="gallery-grid">
+            <article class="gallery-card" data-category="interior">
+                <img src="../images/cafe1.jpg" alt="Café intérieur cosy">
+                <p>Café intérieur cosy et chaleureux, parfait pour se détendre.</p>
+            </article>
+
+            <article class="gallery-card" data-category="products">
+                <img src="../images/cafe3.jpg" alt="Desserts">
+                <p>Nos desserts artisanaux et boissons préparées avec soin.</p>
+            </article>
+
+            <article class="gallery-card" data-category="interior">
+                <img src="../images/cafe4.jpeg" alt="Ambiance lumineuse">
+                <p>Ambiance lumineuse et conviviale, idéale pour lire ou travailler.</p>
+            </article>
+
+            <article class="gallery-card" data-category="events">
+                <img src="../images/event1.jpeg" alt="Événement Café">
+                <p>Événement spécial : dégustation de café et ateliers latte art.</p>
+            </article>
+
+            <article class="gallery-card" data-category="products">
+                <img src="../images/cafe6.jpg" alt="Espresso et latte art">
+                <p>Espresso et latte art réalisés par nos baristas passionnés.</p>
+            </article>
+
+            <article class="gallery-card" data-category="interior">
+                <img src="../images/cafe2.jpg" alt="Barista en action">
+                <p>Notre barista prépare chaque boisson avec précision et amour du café.</p>
+            </article>
+            <article class="gallery-card" data-category="products">
+                <img src="../images/img1.jpg" alt="Espresso et latte art">
+                <p>Un équilibre parfait entre intensité et douceur, servi dans chaque tasse.</p>
+            </article>
+
+            <article class="gallery-card" data-category="interior">
+                <img src="../images/img2.jpg" alt="Barista en action">
+                <p>Là où le café prend vie, dans une atmosphère calme et authentique.</p>
+            </article>
+
+        </div>
+
+        <div class="gallery-cta">
+            <a href="menu.html" class="cta">Voir notre menu</a>
+        </div>
+    </section>
+    <hr>
+
+    <section id="hours" class="hours">
+        <h2>Nous vous accueillons</h2>
+        <table class="hours-table">
+            <thead>
+                <tr>
+                    <th>Jour</th>
+                    <th>Horaires</th>
+                    <th>&#128516</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Jour">Lundi – Vendredi</td>
+                    <td data-label="Horaires">8h – 22h</td>
+                    <td data-label="Note">Pour bien commencer la journée ou finir en douceur.</td>
+                </tr>
+                <tr>
+                    <td data-label="Jour">Samedi – Dimanche</td>
+                    <td data-label="Horaires">9h – 23h</td>
+                    <td data-label="Note">Pour un brunch gourmand ou un café en soirée.</td>
+                </tr>
+            </tbody>
+        </table>
+        <center>
+            <p class="team-note">
+                Notre équipe est là pour vous offrir un service chaleureux et attentionné à chaque visite.
+            </p>
+        </center>
+    </section>
+    <footer class="main-footer-coffee">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="Zakariae Coffee" width="50" height="50">
+                    <span>Café Zakariae</span>
+                </div>
+                <p><i class="fas fa-map-marker-alt"></i>Adresse : Ain Attig</p>
+                <p><i class="fas fa-phone"></i>Téléphone : +212 6 00 00 00 00</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Explorer</h4>
+                <ul class="footer-links">
+                    <li><a href="#hours">Nos Horaires</a></li>
+                    <li><a href="menu.html">Notre Menu</a></li>
+                    <li><a href="gallery.html">Voir la galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Restez au courant</h4>
+                <p>Recevez nos offres et nouveaux blends.</p>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit">OK</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Café Zakariae</p>
+        </div>
+    </footer>
+
+</body>
+<script src="../js/script.js"></script>
+
+</html>

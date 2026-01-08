@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.1.0"></script>
+
+    <title>Café Zakariae</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="nav-header">
+        <nav class="nav">
+
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="Logo Café Zakariae" width="50">
+                <h1>Café Zakariae</h1>
+            </a>
+
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
+            <ul class="nav-links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#story">Histoire</a></li>
+                <li><a href="#NotreMenu">Notre Menu</a></li>
+                <li><a href="#selection">Notre sélection</a></li>
+                <li><a href="#hours">Horaires</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+
+                <li class="visit-counter">
+                    <span>👀</span>
+                    <span id="visits">0</span>
+                </li>
+                <li class="location-badge">
+                    <span>📍</span>
+                    <span id="user-location">...</span>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <img src="images/logo.png" alt="Logo Café Zakariae" class="hero-logo">
+            <h1>Café Zakariae</h1>
+            <p class="hero-subtitle">L’expérience café, réinventée pour vos sens</p>
+            <div class="hero-buttons">
+                <a href="#story" class="cta">Explorer l'histoire</a>
+                <a href="#selection" class="cta secondary">Voir la sélection</a>
+            </div>
+            <div class="hero-icons">
+                <span>☕</span>
+                <span>🍫</span>
+                <span>🥐</span>
+            </div>
+        </div>
+    </section>
+    <section id="story" class="story">
+        <div class="container">
+            <span class="subtitle">L'Artisanat du Grain</span>
+            <h2>Une vision du café</h2>
+            <p class="main-text">
+                Zakariae Coffee est né d’une passion profonde pour le café de spécialité.
+                Chaque détail, du choix des grains à la présentation, est pensé pour offrir une expérience sensorielle
+                complète.
+            </p>
+            <div class="story-btns">
+                <a href="#NotreMenu" class="btn-minimal">Découvrir notre Menu</a>
+                <a href="pages/gallery.html" class="btn-minimal">Voir la Galerie</a>
+                <a href="#hours" class="btn-minimal">Nous rendre visite</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="selection" class="selection">
+        <h2>Notre sélection</h2>
+
+        <div class="selection-grid">
+            <article class="selection-card">
+                <img src="images/yirgacheffe.jpg" alt="Café de spécialité d'Éthiopie">
+                <div class="selection-text">
+                    <h3>Éthiopie – Yirgacheffe</h3>
+                    <p>
+                        Café de haute altitude aux arômes floraux,
+                        avec des notes de jasmin, d’agrumes et une
+                        acidité élégante.
+                    </p>
+                </div>
+            </article>
+
+            <article class="selection-card">
+                <img src="images/colombie.jpeg" alt="Café de Colombie">
+                <div class="selection-text">
+                    <h3>Colombie – Huila</h3>
+                    <p>
+                        Un café équilibré et rond,
+                        révélant des notes de chocolat noir,
+                        de caramel et de fruits rouges.
+                    </p>
+                </div>
+            </article>
+
+            <article class="selection-card">
+                <img src="images/cerrado.jpg" alt="Café du Brésil">
+                <div class="selection-text">
+                    <h3>Brésil – Cerrado</h3>
+                    <p>
+                        Café doux et velouté,
+                        aux saveurs de noisette,
+                        cacao et sucre brun.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+
+    <section class="process" id="process">
+        <h2>Du grain à la tasse</h2>
+        <div class="process-steps">
+            <div>
+                <span>01</span>
+                <h4>Sélection</h4>
+                <p>Choix rigoureux des meilleurs grains.</p>
+            </div>
+
+            <div>
+                <span>02</span>
+                <h4>Torréfaction</h4>
+                <p>Maîtrisée pour révéler les arômes.</p>
+            </div>
+
+            <div>
+                <span>03</span>
+                <h4>Extraction</h4>
+                <p>Chaque tasse est préparée avec précision.</p>
+            </div>
+        </div>
+        <section id="NotreMenu" class="experience">
+            <article class="card">
+                <img src="images/espresso.jpg" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>Extraction intense révélant toute la puissance du café.</p>
+            </article>
+
+            <article class="card">
+                <img src="images/slowCoffee.jpg" alt="Slow coffee">
+                <h3>Slow Coffee</h3>
+                <p>Méthodes douces pour une dégustation raffinée.</p>
+            </article>
+
+            <article class="card">
+                <img src="images/caféGlacé.jpg" alt="Café glacé">
+                <h3>Café Glacé</h3>
+                <p>Fraîcheur et équilibre, sans compromis.</p>
+            </article>
+            <article class="card">
+                <img src="images/capuccino.png" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Un café onctueux avec une mousse de lait légère et veloutée.</p>
+            </article>
+
+            <article class="card">
+                <img src="images/flatwhite.jpg" alt="Flat White">
+                <h3>Flat White</h3>
+                <p>Un équilibre parfait entre espresso et lait micro-mousse pour les amateurs de douceur.</p>
+            </article>
+
+            <article class="card">
+                <img src="images/affogato.jpg" alt="Affogato">
+                <h3>Affogato</h3>
+                <p>Espresso chaud servi sur une boule de glace vanille pour une gourmandise unique.</p>
+            </article>
+
+            <article class="card">
+                <img src="images/latte.jpg" alt="Latte Art">
+                <h3>Latte Art</h3>
+                <p>Mélange crémeux de café et lait avec une touche artistique.</p>
+            </article>
+
+            <article class="card">
+                <img src="images/mocha.jpeg" alt="Mocha">
+                <h3>Mocha</h3>
+                <p>Alliance de chocolat et café pour une gourmandise intense.</p>
+            </article>
+        </section>
+        <div class="menu-cta">
+            <a href="pages/menu.html" class="btn-menu">Voir le menu complet ☕</a>
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="testimonials">
+        <h2>Ils parlent de nous</h2>
+
+        <div class="testimonials-grid">
+            <article>
+                <img src="images/client1.jpg" alt="Client fidèle">
+                <p>“Un café exceptionnel dans un cadre élégant.”</p>
+                <span>— Client fidèle</span>
+            </article>
+
+            <article>
+                <img src="images/client2.jpg" alt="Amateur de café">
+                <p>“La meilleure expérience café que j’ai connue.”</p>
+                <span>— Amateur de café</span>
+            </article>
+            <article>
+                <img src="images/client3.jpg" alt="Client fidèle2">
+                <p>“Chaque visite ici est un véritable moment de détente, le café est exquis et l'ambiance parfaite.”
+                </p>
+                <span>— Cliente fidèle</span>
+            </article>
+
+            <article>
+                <img src="images/client4.jpg" alt="Amateur de café2">
+                <p>“Un lieu où l'on oublie le temps : le parfum du café et la chaleur du décor vous accueillent à chaque
+                    instant.”</p>
+                <span>— Passionné de café</span>
+            </article>
+
+        </div>
+    </section>
+
+
+    <section class="image-break">
+        <div class="image-text">
+            <center>
+                <h2
+                    style="font-family: 'Georgia', serif;font-size: 2.5rem;color: #c89539;text-align: center;position: relative;margin: 40px 0;border-bottom: 2px solid #d9b48f;display: inline-block;padding-bottom: 10px;">
+                    Un moment suspendu
+                </h2>
+            </center>
+            <p>
+                Que vous soyez seul avec votre livre préféré ou entre amis pour une conversation animée,
+                laissez le temps s’arrêter et savourez chaque gorgée de votre boisson.
+            </p>
+            <p>
+                Laissez-vous envelopper par la <span class="highlight">douce musique en fond</span>,
+                le cliquetis discret des tasses et l’arôme réconfortant du <span class="highlight">café fraîchement
+                    préparé</span>.
+            </p>
+            <p>
+                Profitez d’un coin tranquille pour lire, travailler ou simplement rêver,
+                ou installez-vous à la table centrale pour partager rires et discussions.
+                Notre café est conçu pour que chaque visite soit une pause hors du temps,
+                un petit refuge chaleureux au cœur de votre journée.
+            </p>
+        </div>
+    </section>
+
+
+    <section id="hours" class="hours">
+        <h2>Nous vous accueillons</h2>
+        <table class="hours-table">
+            <thead>
+                <tr>
+                    <th>Jour</th>
+                    <th>Horaires</th>
+                    <th>&#128516</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Jour">Lundi – Vendredi</td>
+                    <td data-label="Horaires">8h – 22h</td>
+                    <td data-label="Note">Pour bien commencer la journée ou finir en douceur.</td>
+                </tr>
+                <tr>
+                    <td data-label="Jour">Samedi – Dimanche</td>
+                    <td data-label="Horaires">9h – 23h</td>
+                    <td data-label="Note">Pour un brunch gourmand ou un café en soirée.</td>
+                </tr>
+            </tbody>
+        </table>
+        <center>
+            <p class="team-note">
+                Notre équipe est là pour vous offrir un service chaleureux et attentionné à chaque visite.
+            </p>
+        </center>
+    </section>
+
+    <footer class="main-footer-coffee">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Zakariae Coffee" width="50" height="50">
+                    <span>Café Zakariae</span>
+                </div>
+                <p><i class="fas fa-map-marker-alt"></i>Adresse : Ain Attig</p>
+                <p><i class="fas fa-phone"></i>Téléphone : +212 6 00 00 00 00</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Explorer</h4>
+                <ul class="footer-links">
+                    <li><a href="#hours">Nos Horaires</a></li>
+                    <li><a href="pages/menu.html">Notre Menu</a></li>
+                    <li><a href="pages/gallery.html">Voir la galerie</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Restez au courant</h4>
+                <p>Recevez nos offres et nouveaux blends.</p>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit">OK</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Café Zakariae</p>
+        </div>
+    </footer>
+
+
+    <div id="chatbot-button">☕</div>
+
+
+    <div id="ai-chatbot">
+        <div id="chatbot-header">
+            Boisson Detector <span id="chatbot-close">✖</span>
+        </div>
+
+        <div id="chatbot-body">
+            <div class="ai-cafe-container">
+
+                <h1>☕ Boisson Detector</h1>
+
+                <p class="ai-intro">
+                    Téléversez une image de votre boisson préférée et laissez notre
+                    <strong>Boisson Detector</strong> la reconnaître instantanément !
+                </p>
+
+                <input type="file" id="imageUploadChat" accept="image/*">
+
+                <img id="previewChat" />
+
+
+                <div id="statusChat">
+                    <div id="coffee-loader">
+                        <div class="cup">
+                            <span class="steam s1"></span>
+                            <span class="steam s2"></span>
+                            <span class="steam s3"></span>
+                        </div>
+                        <p>☕ Préparation de l’IA…</p>
+                    </div>
+                </div>
+
+
+                <div id="resultChat"></div>
+
+
+                <div id="suggestionChat">
+                    <span class="badge" id="drink-badgeChat"></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Café Zakariae</title>
+    <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+
+    <header class="nav-header">
+        <nav class="nav">
+            <a href="../index.html" class="nav-logo">
+                <img src="../images/logo.png" alt="Logo Café Zakariae" width="50">
+                <h1>Café Zakariae</h1>
+            </a>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="#" class="active">Contact</a></li>
+                <li class="visit-counter">
+                    <span>👀</span>
+                    <span id="visits">0</span>
+                </li>
+                <li class="location-badge">
+                    <span>📍</span>
+                    <span id="user-location">...</span>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero hero-contact">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Contactez-nous</h1>
+            <p class="hero-subtitle">Une question, une réservation ou simplement envie de nous écrire</p>
+        </div>
+    </section>
+
+
+    <section class="contact-section">
+        <div class="contact-container">
+
+
+            <div class="contact-form">
+                <h2>📩 Contactez Café Zakariae</h2>
+                <p>Une question, une réservation ou un simple message ?
+                    Notre équipe vous répond rapidement.</p>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" placeholder="Votre nom" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Adresse email</label>
+                        <input type="email" id="email" placeholder="Votre email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" placeholder="Sujet du message">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Écrivez votre message ici..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        Envoyer le message ☕
+                    </button>
+                </form>
+            </div>
+
+
+            <div class="contact-info">
+                <h2>☕ Nos informations</h2>
+                <p>Venez nous rendre visite ou contactez-nous directement.</p>
+
+                <div class="info-item">
+                    <strong>📍 Adresse</strong>
+                    <p>Ain Attig, Maroc</p>
+                </div>
+
+                <div class="info-item">
+                    <strong>📞 Téléphone</strong>
+                    <p>+212 6 00 00 00 00</p>
+                </div>
+
+                <div class="info-item">
+                    <strong>✉️ Email</strong>
+                    <p>contact@zakariaecoffee.com</p>
+                </div>
+
+                <div class="info-item">
+                    <strong>⏰ Horaires</strong>
+                    <p>
+                        Lundi – Vendredi : 8h – 22h<br>
+                        Samedi – Dimanche : 9h – 23h
+                    </p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.0000000000005!2d-7.000000000000000!3d32.00000000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2sAin%20Attig%2C%20Maroc!5e0!3m2!1sfr!2sma!4v1700000000000!5m2!1sfr!2sma"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="main-footer-coffee">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="Zakariae Coffee" width="50" height="50">
+                    <span>Café Zakariae</span>
+                </div>
+                <p><i class="fas fa-map-marker-alt"></i>Adresse : Ain Attig</p>
+                <p><i class="fas fa-phone"></i>Téléphone : +212 6 00 00 00 00</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Explorer</h4>
+                <ul class="footer-links">
+                    <li><a href="#hours">Nos Horaires</a></li>
+                    <li><a href="menu.html">Notre Menu</a></li>
+                    <li><a href="gallery.html">Voir la galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Restez au courant</h4>
+                <p>Recevez nos offres et nouveaux blends.</p>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit">OK</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Café Zakariae</p>
+        </div>
+    </footer>
+
+</body>
+<script src="../js/script.js"></script>
+
+</html>
